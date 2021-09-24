@@ -14,9 +14,8 @@ On concrete instance endpoints GET for detail PUT for editing and DELETE for del
 
 TO RUN type following:
 
--$ docker-compose run web python manage.py createsuperuser
-- type username, email and password as prompted
--$ docker-compose up
+~$ docker-compose run web python manage.py createsuperuser, type username, email and password as prompted
+~$ docker-compose up
 
 
 
