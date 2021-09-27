@@ -52,7 +52,8 @@ class SurveyDetailView(mixins.UpdateModelMixin,
 
     def get(self, request, pk):
         '''
-        Returns a detail view of a survey. Method GET.
+        Returns a detail view of a survey with nested jsons for each belonged
+        question with nested for all preset answers. Method GET.
         '''
         survey = get_object_or_404(self.get_queryset(), pk=pk)
         questions_queryset = Question.objects.filter(survey=survey)
